@@ -10,8 +10,6 @@ params ={'serviceKey' : serviceKey}
 
 response = requests.get(url, params=params).text.encode('utf-8')
 xmlobj = bs4.BeautifulSoup(response, 'lxml-xml')
-# parseResponse = response.json()
-# print(xmlobj)
 
 rows = xmlobj.findAll('item')
 # print(rows)

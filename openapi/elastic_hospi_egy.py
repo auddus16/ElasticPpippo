@@ -91,61 +91,62 @@ def openAPI_emergency(): # 응급실정보조회
             if 'dutyEryn' in d:
                 res['dutyEryn'] = int(d['dutyEryn'])
             if 'dutyTime1c' in d:
-                res['dutyTime1c'] = d['dutyTime1c'] if d['dutyTime1c'][:2] != '24' else '00'+ d['dutyTime1c'][2:]
+                res['dutyTime1c'] = d['dutyTime1c'][:2]+':'+ d['dutyTime1c'][2:] if d['dutyTime1c'][:2] != '24' else '00:'+ d['dutyTime1c'][2:]
             if 'dutyTime2c' in d:
-                res['dutyTime2c'] = d['dutyTime2c'] if d['dutyTime2c'][:2] != '24' else '00'+ d['dutyTime2c'][2:]
+                res['dutyTime2c'] = d['dutyTime2c'][:2]+':'+ d['dutyTime2c'][2:] if d['dutyTime2c'][:2] != '24' else '00:'+ d['dutyTime2c'][2:]
             if 'dutyTime3c' in d:
-                res['dutyTime3c'] = d['dutyTime3c'] if d['dutyTime3c'][:2] != '24' else '00'+ d['dutyTime3c'][2:]
+                res['dutyTime3c'] = d['dutyTime3c'][:2]+':'+ d['dutyTime3c'][2:] if d['dutyTime3c'][:2] != '24' else '00:'+ d['dutyTime3c'][2:]
             if 'dutyTime4c' in d:
-                res['dutyTime4c'] = d['dutyTime4c'] if d['dutyTime4c'][:2] != '24' else '00'+ d['dutyTime4c'][2:]
+                res['dutyTime4c'] = d['dutyTime4c'][:2]+':'+ d['dutyTime4c'][2:] if d['dutyTime4c'][:2] != '24' else '00:'+ d['dutyTime4c'][2:]
             if 'dutyTime5c' in d:
-                res['dutyTime5c'] = d['dutyTime5c'] if d['dutyTime5c'][:2] != '24' else '00'+ d['dutyTime5c'][2:]
+                res['dutyTime5c'] = d['dutyTime5c'][:2]+':'+ d['dutyTime5c'][2:] if d['dutyTime5c'][:2] != '24' else '00:'+ d['dutyTime5c'][2:]
             if 'dutyTime6c' in d:
-                res['dutyTime6c'] = d['dutyTime6c'] if d['dutyTime6c'][:2] != '24' else '00'+ d['dutyTime6c'][2:]
+                res['dutyTime6c'] = d['dutyTime6c'][:2]+':'+ d['dutyTime6c'][2:] if d['dutyTime6c'][:2] != '24' else '00:'+ d['dutyTime6c'][2:]
             if 'dutyTime7c' in d:
-                res['dutyTime7c'] = d['dutyTime7c'] if d['dutyTime7c'][:2] != '24' else '00'+ d['dutyTime7c'][2:]
+                res['dutyTime7c'] = d['dutyTime7c'][:2]+':'+ d['dutyTime7c'][2:] if d['dutyTime7c'][:2] != '24' else '00:'+ d['dutyTime7c'][2:]
             if 'dutyTime8c' in d:
-                res['dutyTime8c'] = d['dutyTime8c'] if d['dutyTime8c'][:2] != '24' else '00'+ d['dutyTime8c'][2:]
+                res['dutyTime8c'] = d['dutyTime8c'][:2]+':'+ d['dutyTime8c'][2:] if d['dutyTime8c'][:2] != '24' else '00:'+ d['dutyTime8c'][2:]
             if 'dutyTime1s' in d:
-                res['dutyTime1s'] = d['dutyTime1s'] if d['dutyTime1s'][:2] != '24' else '00'+ d['dutyTime1s'][2:]
+                res['dutyTime1s'] = d['dutyTime1s'][:2]+':'+ d['dutyTime1s'][2:] if d['dutyTime1s'][:2] != '24' else '00:'+ d['dutyTime1s'][2:]
             if 'dutyTime2s' in d:
-                res['dutyTime2s'] = d['dutyTime2s'] if d['dutyTime2s'][:2] != '24' else '00'+ d['dutyTime2s'][2:]
+                res['dutyTime2s'] = d['dutyTime2s'][:2]+':'+ d['dutyTime2s'][2:] if d['dutyTime2s'][:2] != '24' else '00:'+ d['dutyTime2s'][2:]
             if 'dutyTime3s' in d:
-                res['dutyTime3s'] = d['dutyTime3s'] if d['dutyTime3s'][:2] != '24' else '00'+ d['dutyTime3s'][2:]
+                res['dutyTime3s'] = d['dutyTime3s'][:2]+':'+ d['dutyTime3s'][2:] if d['dutyTime3s'][:2] != '24' else '00:'+ d['dutyTime3s'][2:]
             if 'dutyTime4s' in d:
-                res['dutyTime4s'] = d['dutyTime4s'] if d['dutyTime4s'][:2] != '24' else '00'+ d['dutyTime4s'][2:]
+                res['dutyTime4s'] = d['dutyTime4s'][:2]+':'+ d['dutyTime4s'][2:] if d['dutyTime4s'][:2] != '24' else '00:'+ d['dutyTime4s'][2:]
             if 'dutyTime5s' in d:
-                res['dutyTime5s'] = d['dutyTime5s'] if d['dutyTime5s'][:2] != '24' else '00'+ d['dutyTime5s'][2:]
+                res['dutyTime5s'] = d['dutyTime5s'][:2]+':'+ d['dutyTime5s'][2:] if d['dutyTime5s'][:2] != '24' else '00:'+ d['dutyTime5s'][2:]
             if 'dutyTime6s' in d:
-                res['dutyTime6s'] = d['dutyTime6s'] if d['dutyTime6s'][:2] != '24' else '00'+ d['dutyTime6s'][2:]
+                res['dutyTime6s'] = d['dutyTime6s'][:2]+':'+ d['dutyTime6s'][2:] if d['dutyTime6s'][:2] != '24' else '00:'+ d['dutyTime6s'][2:]
             if 'dutyTime7s' in d:
-                res['dutyTime7s'] = d['dutyTime7s'] if d['dutyTime7s'][:2] != '24' else '00'+ d['dutyTime7s'][2:]
+                res['dutyTime7s'] = d['dutyTime7s'][:2]+':'+ d['dutyTime7s'][2:] if d['dutyTime7s'][:2] != '24' else '00:'+ d['dutyTime7s'][2:]
             if 'dutyTime8s' in d:
-                res['dutyTime8s'] = d['dutyTime8s'] if d['dutyTime8s'][:2] != '24' else '00'+ d['dutyTime8s'][2:]
-            if 'MKioskTy25' in d:
-                res['MKioskTy25'] = d['MKioskTy25']
-            if 'MKioskTy1' in d:
-                res['MKioskTy1'] = d['MKioskTy1']
-            if 'MKioskTy2' in d:
-                res['MKioskTy2'] = d['MKioskTy2']
-            if 'MKioskTy3' in d:
-                res['MKioskTy3'] = d['MKioskTy3']
-            if 'MKioskTy4' in d:
-                res['MKioskTy4'] = d['MKioskTy4']
-            if 'MKioskTy5' in d:
-                res['MKioskTy5'] = d['MKioskTy5']
-            if 'MKioskTy6' in d:
-                res['MKioskTy6'] = d['MKioskTy6']
-            if 'MKioskTy7' in d:
-                res['MKioskTy7'] = d['MKioskTy7']
-            if 'MKioskTy8' in d:
-                res['MKioskTy8'] = d['MKioskTy8']
-            if 'MKioskTy9' in d:
-                res['MKioskTy9'] = d['MKioskTy9']
-            if 'MKioskTy10' in d:
-                res['MKioskTy10'] = d['MKioskTy10']
-            if 'MKioskTy11' in d:
-                res['MKioskTy11'] = d['MKioskTy11']
+                res['dutyTime8s'] = d['dutyTime8s'][:2]+':'+ d['dutyTime8s'][2:] if d['dutyTime8s'][:2] != '24' else '00:'+ d['dutyTime8s'][2:]
+
+            if 'MKioskTy25' in d and d['MKioskTy25'] == 'Y':
+                res['MKioskTy25'] = '응급실(Emergency gate keeper)'
+            if 'MKioskTy1' in d and d['MKioskTy1'] == 'Y':
+                res['MKioskTy1'] = '뇌출혈수술'
+            if 'MKioskTy2' in d and d['MKioskTy2'] == 'Y':
+                res['MKioskTy2'] = '뇌경색의재관류'
+            if 'MKioskTy3' in d and d['MKioskTy3'] == 'Y':
+                res['MKioskTy3'] = '심근경색의재관류'
+            if 'MKioskTy4' in d and d['MKioskTy4'] == 'Y':
+                res['MKioskTy4'] = '복부손상의수술'
+            if 'MKioskTy5' in d and d['MKioskTy5'] == 'Y':
+                res['MKioskTy5'] = '사지접합의수술'
+            if 'MKioskTy6' in d and d['MKioskTy6'] == 'Y':
+                res['MKioskTy6'] = '응급내시경'
+            if 'MKioskTy7' in d and d['MKioskTy7'] == 'Y':
+                res['MKioskTy7'] = '응급투석'
+            if 'MKioskTy8' in d and d['MKioskTy8'] == 'Y':
+                res['MKioskTy8'] = '조산산모'
+            if 'MKioskTy9' in d and d['MKioskTy9'] == 'Y':
+                res['MKioskTy9'] = '정신질환자'
+            if 'MKioskTy10' in d and d['MKioskTy10'] == 'Y':
+                res['MKioskTy10'] = '신생아'
+            if 'MKioskTy11' in d and d['MKioskTy11'] == 'Y':
+                res['MKioskTy11'] = '중증화상'
 
             if 'wgs84Lon' in d and 'wgs84Lat' in d:
                 res['location'] = {"lat": float(d['wgs84Lat']), "lon": float(d['wgs84Lon'])}
@@ -266,61 +267,62 @@ def openAPI_strm(): # 외상센터정보조회
             if 'dutyEryn' in d:
                 res['dutyEryn'] = int(d['dutyEryn'])
             if 'dutyTime1c' in d:
-                res['dutyTime1c'] = d['dutyTime1c'] if d['dutyTime1c'][:2] != '24' else '00'+ d['dutyTime1c'][2:]
+                res['dutyTime1c'] = d['dutyTime1c'][:2]+':'+ d['dutyTime1c'][2:] if d['dutyTime1c'][:2] != '24' else '00:'+ d['dutyTime1c'][2:]
             if 'dutyTime2c' in d:
-                res['dutyTime2c'] = d['dutyTime2c'] if d['dutyTime2c'][:2] != '24' else '00'+ d['dutyTime2c'][2:]
+                res['dutyTime2c'] = d['dutyTime2c'][:2]+':'+ d['dutyTime2c'][2:] if d['dutyTime2c'][:2] != '24' else '00:'+ d['dutyTime2c'][2:]
             if 'dutyTime3c' in d:
-                res['dutyTime3c'] = d['dutyTime3c'] if d['dutyTime3c'][:2] != '24' else '00'+ d['dutyTime3c'][2:]
+                res['dutyTime3c'] = d['dutyTime3c'][:2]+':'+ d['dutyTime3c'][2:] if d['dutyTime3c'][:2] != '24' else '00:'+ d['dutyTime3c'][2:]
             if 'dutyTime4c' in d:
-                res['dutyTime4c'] = d['dutyTime4c'] if d['dutyTime4c'][:2] != '24' else '00'+ d['dutyTime4c'][2:]
+                res['dutyTime4c'] = d['dutyTime4c'][:2]+':'+ d['dutyTime4c'][2:] if d['dutyTime4c'][:2] != '24' else '00:'+ d['dutyTime4c'][2:]
             if 'dutyTime5c' in d:
-                res['dutyTime5c'] = d['dutyTime5c'] if d['dutyTime5c'][:2] != '24' else '00'+ d['dutyTime5c'][2:]
+                res['dutyTime5c'] = d['dutyTime5c'][:2]+':'+ d['dutyTime5c'][2:] if d['dutyTime5c'][:2] != '24' else '00:'+ d['dutyTime5c'][2:]
             if 'dutyTime6c' in d:
-                res['dutyTime6c'] = d['dutyTime6c'] if d['dutyTime6c'][:2] != '24' else '00'+ d['dutyTime6c'][2:]
+                res['dutyTime6c'] = d['dutyTime6c'][:2]+':'+ d['dutyTime6c'][2:] if d['dutyTime6c'][:2] != '24' else '00:'+ d['dutyTime6c'][2:]
             if 'dutyTime7c' in d:
-                res['dutyTime7c'] = d['dutyTime7c'] if d['dutyTime7c'][:2] != '24' else '00'+ d['dutyTime7c'][2:]
+                res['dutyTime7c'] = d['dutyTime7c'][:2]+':'+ d['dutyTime7c'][2:] if d['dutyTime7c'][:2] != '24' else '00:'+ d['dutyTime7c'][2:]
             if 'dutyTime8c' in d:
-                res['dutyTime8c'] = d['dutyTime8c'] if d['dutyTime8c'][:2] != '24' else '00'+ d['dutyTime8c'][2:]
+                res['dutyTime8c'] = d['dutyTime8c'][:2]+':'+ d['dutyTime8c'][2:] if d['dutyTime8c'][:2] != '24' else '00:'+ d['dutyTime8c'][2:]
             if 'dutyTime1s' in d:
-                res['dutyTime1s'] = d['dutyTime1s'] if d['dutyTime1s'][:2] != '24' else '00'+ d['dutyTime1s'][2:]
+                res['dutyTime1s'] = d['dutyTime1s'][:2]+':'+ d['dutyTime1s'][2:] if d['dutyTime1s'][:2] != '24' else '00:'+ d['dutyTime1s'][2:]
             if 'dutyTime2s' in d:
-                res['dutyTime2s'] = d['dutyTime2s'] if d['dutyTime2s'][:2] != '24' else '00'+ d['dutyTime2s'][2:]
+                res['dutyTime2s'] = d['dutyTime2s'][:2]+':'+ d['dutyTime2s'][2:] if d['dutyTime2s'][:2] != '24' else '00:'+ d['dutyTime2s'][2:]
             if 'dutyTime3s' in d:
-                res['dutyTime3s'] = d['dutyTime3s'] if d['dutyTime3s'][:2] != '24' else '00'+ d['dutyTime3s'][2:]
+                res['dutyTime3s'] = d['dutyTime3s'][:2]+':'+ d['dutyTime3s'][2:] if d['dutyTime3s'][:2] != '24' else '00:'+ d['dutyTime3s'][2:]
             if 'dutyTime4s' in d:
-                res['dutyTime4s'] = d['dutyTime4s'] if d['dutyTime4s'][:2] != '24' else '00'+ d['dutyTime4s'][2:]
+                res['dutyTime4s'] = d['dutyTime4s'][:2]+':'+ d['dutyTime4s'][2:] if d['dutyTime4s'][:2] != '24' else '00:'+ d['dutyTime4s'][2:]
             if 'dutyTime5s' in d:
-                res['dutyTime5s'] = d['dutyTime5s'] if d['dutyTime5s'][:2] != '24' else '00'+ d['dutyTime5s'][2:]
+                res['dutyTime5s'] = d['dutyTime5s'][:2]+':'+ d['dutyTime5s'][2:] if d['dutyTime5s'][:2] != '24' else '00:'+ d['dutyTime5s'][2:]
             if 'dutyTime6s' in d:
-                res['dutyTime6s'] = d['dutyTime6s'] if d['dutyTime6s'][:2] != '24' else '00'+ d['dutyTime6s'][2:]
+                res['dutyTime6s'] = d['dutyTime6s'][:2]+':'+ d['dutyTime6s'][2:] if d['dutyTime6s'][:2] != '24' else '00:'+ d['dutyTime6s'][2:]
             if 'dutyTime7s' in d:
-                res['dutyTime7s'] = d['dutyTime7s'] if d['dutyTime7s'][:2] != '24' else '00'+ d['dutyTime7s'][2:]
+                res['dutyTime7s'] = d['dutyTime7s'][:2]+':'+ d['dutyTime7s'][2:] if d['dutyTime7s'][:2] != '24' else '00:'+ d['dutyTime7s'][2:]
             if 'dutyTime8s' in d:
-                res['dutyTime8s'] = d['dutyTime8s'] if d['dutyTime8s'][:2] != '24' else '00'+ d['dutyTime8s'][2:]
-            if 'MKioskTy25' in d:
-                res['MKioskTy25'] = d['MKioskTy25']
-            if 'MKioskTy1' in d:
-                res['MKioskTy1'] = d['MKioskTy1']
-            if 'MKioskTy2' in d:
-                res['MKioskTy2'] = d['MKioskTy2']
-            if 'MKioskTy3' in d:
-                res['MKioskTy3'] = d['MKioskTy3']
-            if 'MKioskTy4' in d:
-                res['MKioskTy4'] = d['MKioskTy4']
-            if 'MKioskTy5' in d:
-                res['MKioskTy5'] = d['MKioskTy5']
-            if 'MKioskTy6' in d:
-                res['MKioskTy6'] = d['MKioskTy6']
-            if 'MKioskTy7' in d:
-                res['MKioskTy7'] = d['MKioskTy7']
-            if 'MKioskTy8' in d:
-                res['MKioskTy8'] = d['MKioskTy8']
-            if 'MKioskTy9' in d:
-                res['MKioskTy9'] = d['MKioskTy9']
-            if 'MKioskTy10' in d:
-                res['MKioskTy10'] = d['MKioskTy10']
-            if 'MKioskTy11' in d:
-                res['MKioskTy11'] = d['MKioskTy11']
+                res['dutyTime8s'] = d['dutyTime8s'][:2]+':'+ d['dutyTime8s'][2:] if d['dutyTime8s'][:2] != '24' else '00:'+ d['dutyTime8s'][2:]
+
+            if 'MKioskTy25' in d and d['MKioskTy25'] == 'Y':
+                res['MKioskTy25'] = '응급실(Emergency gate keeper)'
+            if 'MKioskTy1' in d and d['MKioskTy1'] == 'Y':
+                res['MKioskTy1'] = '뇌출혈수술'
+            if 'MKioskTy2' in d and d['MKioskTy2'] == 'Y':
+                res['MKioskTy2'] = '뇌경색의재관류'
+            if 'MKioskTy3' in d and d['MKioskTy3'] == 'Y':
+                res['MKioskTy3'] = '심근경색의재관류'
+            if 'MKioskTy4' in d and d['MKioskTy4'] == 'Y':
+                res['MKioskTy4'] = '복부손상의수술'
+            if 'MKioskTy5' in d and d['MKioskTy5'] == 'Y':
+                res['MKioskTy5'] = '사지접합의수술'
+            if 'MKioskTy6' in d and d['MKioskTy6'] == 'Y':
+                res['MKioskTy6'] = '응급내시경'
+            if 'MKioskTy7' in d and d['MKioskTy7'] == 'Y':
+                res['MKioskTy7'] = '응급투석'
+            if 'MKioskTy8' in d and d['MKioskTy8'] == 'Y':
+                res['MKioskTy8'] = '조산산모'
+            if 'MKioskTy9' in d and d['MKioskTy9'] == 'Y':
+                res['MKioskTy9'] = '정신질환자'
+            if 'MKioskTy10' in d and d['MKioskTy10'] == 'Y':
+                res['MKioskTy10'] = '신생아'
+            if 'MKioskTy11' in d and d['MKioskTy11'] == 'Y':
+                res['MKioskTy11'] = '중증화상'
 
             if 'wgs84Lon' in d and 'wgs84Lat' in d:
                 res['location'] = {"lat": float(d['wgs84Lat']), "lon": float(d['wgs84Lon'])}
@@ -343,9 +345,10 @@ def openAPI_strm(): # 외상센터정보조회
                 res['hpopyn'] = int(d['hpopyn'])
 
             make_doc(docs, res)
-    # print(docs)
 
     helpers.bulk(es, docs, raise_on_error=False)
 
-# openAPI_strm()
+openAPI_emergency()
+openAPI_strm()
+
 # 응급실기본정보 http://apis.data.go.kr/B552657/ErmctInfoInqireService/getEgytBassInfoInqire
