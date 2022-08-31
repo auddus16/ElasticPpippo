@@ -35,3 +35,5 @@ https://kim-yeaseul.github.io/ppippo2/
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"/>
 ## 💻 데이터 수집 & ES Index 
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=Python&logoColor=white"/> <img src="https://img.shields.io/badge/Elastic-005571?style=flat&logo=Elastic&logoColor=white"/> <img src="https://img.shields.io/badge/Elastic%20Cloud-005571?style=flat&logo=Elastic%20Cloud&logoColor=white"/> <img src="https://img.shields.io/badge/Elasticsearch-005571?style=flat&logo=Elasticsearch&logoColor=white"/>
+## 📊 Kibana
+<img src="https://img.shields.io/badge/Kibana-005571?style=flat&logo=Kibana&logoColor=white"/>
