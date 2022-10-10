@@ -1,5 +1,5 @@
 # 삐뽀삐뽀 (PpippoPpippo)
-2022 Elastic과 함께하는 상명 데이터 콘서트
+2022 Elastic과 함께하는 데이터 콘서트
 
 ![image](https://user-images.githubusercontent.com/60458457/187589905-83a2259e-d60d-47c1-8549-e86a434d8011.png)
 
