@@ -13,21 +13,12 @@
 https://kim-yeaseul.github.io/ppippo2/
 
 ## 👩‍💻 개발자
-
-|팀원   | 역할          
-| ------ | -----------------
-| 김예슬 | Kibana, Front-end        
-| 김윤진 | 데이터 수집, ES Index
-| 이정명 | Kibana, ppt
-| 황명연 | 데이터 수집, ES Index
-
 | Contributor                             | 팀원   | 역할          
 |----------------------------------------| ------ | -----------------
 | [kim-yeaseul](https://github.com/kim-yeaseul)| 김예슬 | Kibana, Front-end         
 | [yunjin99](https://github.com/yunjin99) | 김윤진 | 데이터 수집, ES Index
 | [jeongmyeong00](https://github.com/jeongmyeong00)| 이정명 | Kibana, ppt        
 | [auddus16](https://github.com/auddus16)| 황명연 | 데이터 수집, ES Index
-
 
 ## 🗓️ 2022.04 ~ 2022.08
 
