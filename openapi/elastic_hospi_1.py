@@ -4,6 +4,49 @@ import requests
 import json
 
 serviceKey = 'O+6wCPB3OtdW24LIG9YMrZRTmHf0aPlw0PEDC5eB1To3ozw5x1Sxi7NqBa1M0V0XhqaUd1+wWB8aKqqPNvIvDw=='
+def newopenAPI():
+    url = 'http://apis.data.go.kr/B551182/spclMdlrtHospInfoService/getChildNightMdlrtList'
+    global serviceKey
+    params = {'serviceKey': serviceKey, 'numOfRows': 400}
+
+    es = Elasticsearch(
+        cloud_id='buyornot:YXAtbm9ydGhlYXN0LTIuYXdzLmVsYXN0aWMtY2xvdWQuY29tOjkyNDMkZDcyODFhN2RiYTVhNDQ5MjhlOTEzMjBlMzllZjUxNTMkYmUzZjA1NjgyZDU5NGNmZmJkNTYxNjM5OWNlN2FiNTc=',
+        basic_auth=('elastic', 'Orf5PC90BVmMMuVU5cKoTyrs'),
+    )
+
+    response = requests.get(url, params=params).text.encode('utf-8')
+
+    decode_data = response.decode('utf-8')
+    # print(decode_data)
+
+    xml_parse = xmltodict.parse(decode_data)  # string인 xml 파싱
+    xml_dict = json.loads(json.dumps(xml_parse))
+    # print(xml_dict['response']['body']['items']['item'][0]['ykiho'])
+
+    ykiho_list = []
+    for i in xml_dict['response']['body']['items']['item']:
+        ykiho_list.append(i['ykiho'])
+
+    print(len(ykiho_list))
+
+    for i in ykiho_list:
+        es.update_by_query(
+            index = 'hospi-final',
+            body = {
+                "script": {
+                    "source": "ctx._source['소아야간진료']='소아야간진료'",
+                    "lang": "painless"
+                },
+                "query": {
+                    "match": {
+                        "hospital_info.ykiho": i
+                    }
+                }
+            }
+        )
+
+newopenAPI()
+
 
 def openAPI(): # 병원정보조회
     url = 'http://apis.data.go.kr/B551182/hospInfoService1/getHospBasisList1'
@@ -184,7 +227,7 @@ def openAPI_detail_info(): # 의료기관별상세조회 -> 진료과목 조회
         #     helpers.bulk(es, docs)
 # get_ykiho()
 
-openAPI_detail_info()
+# openAPI_detail_info()
 
 def test():
     url = 'https://apis.data.go.kr/B551182/MadmDtlInfoService/getDgsbjtInfo?ServiceKey=O%2B6wCPB3OtdW24LIG9YMrZRTmHf0aPlw0PEDC5eB1To3ozw5x1Sxi7NqBa1M0V0XhqaUd1%2BwWB8aKqqPNvIvDw%3D%3D&ykiho=JDQ4MTAxMiM1MSMkMSMkMCMkMTMkMzgxNzAyIzIxIyQxIyQ1IyQ5MiQzNjEyMjIjNjEjJDEjJDgjJDgz'
